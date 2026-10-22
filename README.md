@@ -23,12 +23,12 @@ A movie platform built to demonstrate the whole **Database Management** syllabus
 
 ```bash
 # 1. Frontend
-cp .env.example .env            # add VITE_TMDB_API_KEY
+cp .env.example .env           
 npm install
 
 # 2. Backend
 cd server
-cp .env.example .env            # set DB_ADMIN_PASSWORD (your MySQL root pw) and JWT_SECRET
+cp .env.example .env            
 npm install
 npm run db:setup                # creates DB, tables, routines, triggers, roles, seed data, star schema
 npm run dev                     # API on http://localhost:4000
