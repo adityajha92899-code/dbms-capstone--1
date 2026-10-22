@@ -2,8 +2,11 @@ import axios from "axios";
 
 export const TOKEN_KEY = "ajcinema_token";
 
+const rawBase = import.meta.env.VITE_API_URL;
+const baseURL = rawBase ? `${rawBase.replace(/\/+$/, "")}/api` : "/api";
+
 // Axios instance for OUR backend (TMDB has its own in api.js)
-export const server = axios.create({ baseURL: "/api" });
+export const server = axios.create({ baseURL });
 server.interceptors.request.use((cfg) => {
   const t = localStorage.getItem(TOKEN_KEY);
   if (t) cfg.headers.Authorization = `Bearer ${t}`;

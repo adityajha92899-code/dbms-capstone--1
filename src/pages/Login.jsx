@@ -63,9 +63,14 @@ export default function Login() {
             </button>
           </form>
 
-          <p className="text-center text-zinc-600 text-xs mt-6">
-            Demo: <button type="button" className="text-zinc-400 hover:text-brand-400 underline" onClick={() => { setMode("signin"); setForm({ name: "", email: "asha@demo.dev", password: "Demo@1234" }); }}>asha@demo.dev</button> / Demo@1234
-          </p>
+          <div className="text-center text-zinc-500 text-xs mt-6 space-y-1">
+            <p>Demo Logins (click to fill):</p>
+            <p>
+              <button type="button" className="text-zinc-300 hover:text-brand-400 underline" onClick={() => { setMode("signin"); setForm({ name: "", email: "asha@demo.dev", password: "Demo@1234" }); }}>asha@demo.dev (Member)</button>
+              {" · "}
+              <button type="button" className="text-zinc-300 hover:text-brand-400 underline" onClick={() => { setMode("signin"); setForm({ name: "", email: "admin@ajcinema.dev", password: "Admin@123" }); }}>admin@ajcinema.dev (Admin)</button>
+            </p>
+          </div>
         </div>
         <p className="text-center text-zinc-600 text-xs mt-4"><Link to="/" className="hover:text-zinc-400 transition-colors">← Back to Home</Link></p>
       </div>
