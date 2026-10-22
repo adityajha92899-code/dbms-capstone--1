@@ -1,5 +1,9 @@
 # 🎬 AJ CINEMA — Full-Stack Database Capstone
 
+[![Live Demo](https://img.shields.io/badge/Live%20Demo-Netlify-00C7B7?style=for-the-badge&logo=netlify&logoColor=white)](https://6ada26e4445166b8915c36ec--comforting-piroshki-220c97.netlify.app/)
+
+🔗 **Live Demo URL:** [https://6ada26e4445166b8915c36ec--comforting-piroshki-220c97.netlify.app/](https://6ada26e4445166b8915c36ec--comforting-piroshki-220c97.netlify.app/)
+
 A movie platform built to demonstrate the whole **Database Management** syllabus:
 **MySQL** (relational design, SQL, transactions, security, warehouse) + **MongoDB** (social feed) + **Node/Express** API + **React** UI (TMDB for movie data).
 
